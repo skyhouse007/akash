@@ -285,7 +285,9 @@ const App = () => {
                 Featured Projects
               </span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <p
+              className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} max-w-2xl mx-auto`}
+            >
               Showcasing our latest work and successful digital transformations.
             </p>
           </div>
