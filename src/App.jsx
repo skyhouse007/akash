@@ -693,8 +693,12 @@ const App = () => {
                 Dribbble
               </a>
             </div>
-            <div className="border-t border-gray-800 pt-8">
-              <p className="text-gray-500">
+            <div
+              className={`border-t ${isDarkMode ? "border-gray-800" : "border-gray-300"} pt-8`}
+            >
+              <p
+                className={`${isDarkMode ? "text-gray-500" : "text-gray-600"}`}
+              >
                 © 2024 Akash Venture. All rights reserved.
               </p>
             </div>
