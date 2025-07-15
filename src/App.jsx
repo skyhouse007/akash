@@ -598,7 +598,10 @@ const App = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900/50">
+      <section
+        id="contact"
+        className={`py-20 ${isDarkMode ? "bg-gray-900/50" : "bg-gray-50"}`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -606,7 +609,9 @@ const App = () => {
                 Get In Touch
               </span>
             </h2>
-            <p className="text-xl text-gray-300">
+            <p
+              className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+            >
               Ready to start your digital transformation? Let's discuss your
               project.
             </p>
