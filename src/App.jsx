@@ -346,7 +346,9 @@ const App = () => {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Full Name *
                 </label>
                 <input
@@ -360,7 +362,9 @@ const App = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Email Address *
                 </label>
                 <input
@@ -374,7 +378,9 @@ const App = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Phone Number
                 </label>
                 <input
@@ -387,7 +393,9 @@ const App = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Service Required *
                 </label>
                 <select
@@ -406,7 +414,9 @@ const App = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Project Type
                 </label>
                 <select
@@ -423,7 +433,9 @@ const App = () => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+                >
                   Budget Range
                 </label>
                 <select
@@ -442,7 +454,9 @@ const App = () => {
             </div>
 
             <div className="mb-6">
-              <label className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+              >
                 Project Timeline
               </label>
               <select
@@ -461,7 +475,9 @@ const App = () => {
             </div>
 
             <div className="mb-8">
-              <label className="block text-sm font-medium text-gray-300 mb-2">
+              <label
+                className={`block text-sm font-medium ${isDarkMode ? "text-gray-300" : "text-gray-700"} mb-2`}
+              >
                 Project Description *
               </label>
               <textarea
