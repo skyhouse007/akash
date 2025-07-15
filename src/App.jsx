@@ -554,7 +554,9 @@ const App = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-center">
+              <div
+                className={`bg-gradient-to-br from-blue-900/30 to-blue-800/30 backdrop-blur-sm border ${isDarkMode ? "border-gray-700" : "border-gray-200"} rounded-xl p-6 text-center shadow-lg`}
+              >
                 <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
                 <div className="text-gray-300">Projects Completed</div>
               </div>
