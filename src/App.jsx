@@ -248,18 +248,22 @@ const App = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105"
+                className={`${isDarkMode ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-200"} backdrop-blur-sm border rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg`}
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-3 text-blue-400">
                   {service.title}
                 </h3>
-                <p className="text-gray-300 mb-4">{service.description}</p>
+                <p
+                  className={`${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-4`}
+                >
+                  {service.description}
+                </p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li
                       key={idx}
-                      className="text-sm text-gray-400 flex items-center"
+                      className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-500"} flex items-center`}
                     >
                       <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
                       {feature}
