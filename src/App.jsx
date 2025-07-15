@@ -558,23 +558,39 @@ const App = () => {
                 className={`bg-gradient-to-br from-blue-900/30 to-blue-800/30 backdrop-blur-sm border ${isDarkMode ? "border-gray-700" : "border-gray-200"} rounded-xl p-6 text-center shadow-lg`}
               >
                 <div className="text-3xl font-bold text-blue-400 mb-2">50+</div>
-                <div className="text-gray-300">Projects Completed</div>
+                <div
+                  className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                >
+                  Projects Completed
+                </div>
               </div>
               <div className="bg-gradient-to-br from-purple-900/30 to-purple-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-purple-400 mb-2">
                   100%
                 </div>
-                <div className="text-gray-300">Client Satisfaction</div>
+                <div
+                  className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                >
+                  Client Satisfaction
+                </div>
               </div>
               <div className="bg-gradient-to-br from-pink-900/30 to-pink-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-pink-400 mb-2">
                   24/7
                 </div>
-                <div className="text-gray-300">Support Available</div>
+                <div
+                  className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                >
+                  Support Available
+                </div>
               </div>
               <div className="bg-gradient-to-br from-green-900/30 to-green-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-green-400 mb-2">3+</div>
-                <div className="text-gray-300">Years Experience</div>
+                <div
+                  className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                >
+                  Years Experience
+                </div>
               </div>
             </div>
           </div>
