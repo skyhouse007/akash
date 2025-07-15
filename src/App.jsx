@@ -321,7 +321,10 @@ const App = () => {
       </section>
 
       {/* Quote Form Section */}
-      <section id="quote" className="py-20 bg-gray-900/50">
+      <section
+        id="quote"
+        className={`py-20 ${isDarkMode ? "bg-gray-900/50" : "bg-gray-50"}`}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
