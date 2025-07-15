@@ -621,19 +621,29 @@ const App = () => {
             <div className="text-center">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-xl font-bold text-blue-400 mb-2">Email Us</h3>
-              <p className="text-gray-300">hello@akashventure.com</p>
+              <p
+                className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+              >
+                hello@akashventure.com
+              </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">📞</div>
               <h3 className="text-xl font-bold text-purple-400 mb-2">
                 Call Us
               </h3>
-              <p className="text-gray-300">+1 (555) 123-4567</p>
+              <p
+                className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+              >
+                +1 (555) 123-4567
+              </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">📍</div>
               <h3 className="text-xl font-bold text-pink-400 mb-2">Visit Us</h3>
-              <p className="text-gray-300">
+              <p
+                className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+              >
                 123 Innovation Street
                 <br />
                 Tech City, TC 12345
