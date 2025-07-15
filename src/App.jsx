@@ -355,7 +355,7 @@ const App = () => {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                   placeholder="Your full name"
                 />
               </div>
@@ -369,7 +369,7 @@ const App = () => {
                   required
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                   placeholder="your@email.com"
                 />
               </div>
@@ -382,7 +382,7 @@ const App = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -395,7 +395,7 @@ const App = () => {
                   required
                   value={formData.service}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                 >
                   <option value="">Select a service</option>
                   <option value="website">Website Development</option>
@@ -413,7 +413,7 @@ const App = () => {
                   name="projectType"
                   value={formData.projectType}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                 >
                   <option value="">Select project type</option>
                   <option value="new">New Project</option>
@@ -430,7 +430,7 @@ const App = () => {
                   name="budget"
                   value={formData.budget}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                  className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
                 >
                   <option value="">Select budget range</option>
                   <option value="under-5k">Under $5,000</option>
@@ -449,7 +449,7 @@ const App = () => {
                 name="timeline"
                 value={formData.timeline}
                 onChange={handleInputChange}
-                className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
+                className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors`}
               >
                 <option value="">Select timeline</option>
                 <option value="asap">ASAP (Rush Job)</option>
