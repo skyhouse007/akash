@@ -296,9 +296,11 @@ const App = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="group bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:border-purple-500/50 transition-all duration-300"
+                className={`group ${isDarkMode ? "bg-gray-800/30 border-gray-700" : "bg-white border-gray-200"} backdrop-blur-sm border rounded-xl overflow-hidden hover:border-purple-500/50 transition-all duration-300 shadow-lg`}
               >
-                <div className="aspect-square bg-gradient-to-br from-blue-900/20 to-purple-900/20 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-300">
+                <div
+                  className={`aspect-square ${isDarkMode ? "bg-gradient-to-br from-blue-900/20 to-purple-900/20" : "bg-gradient-to-br from-blue-100/50 to-purple-100/50"} flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-300`}
+                >
                   {project.image}
                 </div>
                 <div className="p-6">
@@ -306,7 +308,11 @@ const App = () => {
                     {project.category}
                   </div>
                   <h3 className="text-lg font-bold mb-2">{project.title}</h3>
-                  <p className="text-gray-400 text-sm">{project.description}</p>
+                  <p
+                    className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} text-sm`}
+                  >
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}
