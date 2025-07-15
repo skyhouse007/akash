@@ -303,7 +303,7 @@ const App = () => {
         </div>
       </nav>
 
-      {/* Enhanced Hero Section */}
+            {/* Enhanced Hero Section */}
       <section
         id="home"
         ref={heroRef}
@@ -318,9 +318,7 @@ const App = () => {
             }}
           >
             {/* Overlay for better text readability */}
-            <div
-              className={`absolute inset-0 ${isDarkMode ? "bg-black/70" : "bg-black/50"}`}
-            ></div>
+            <div className={`absolute inset-0 ${isDarkMode ? "bg-black/70" : "bg-black/50"}`}></div>
           </div>
           <div
             className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"
@@ -341,10 +339,26 @@ const App = () => {
           ></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
+            {/* Build. Ship. Scale. Header */}
+            <div className="mb-8">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-none text-white mb-4">
+                <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">
+                  Build.
+                </span>{" "}
+                <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-red-300 bg-clip-text text-transparent">
+                  Ship.
+                </span>{" "}
+                <span className="bg-gradient-to-r from-red-300 via-orange-300 to-yellow-300 bg-clip-text text-transparent">
+                  Scale.
+                </span>
+              </h1>
+              <div className="w-32 h-1 bg-gradient-to-r from-cyan-400 via-purple-400 to-orange-400 mx-auto rounded-full"></div>
+            </div>
+
             <div className="relative">
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-none">
+              <h2 className="text-5xl md:text-7xl lg:text-8xl font-black leading-none">
                 <span
                   className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse"
                   style={{
@@ -952,15 +966,17 @@ const App = () => {
               Transforming ideas into digital reality since 2021
             </p>
             <div className="flex justify-center space-x-8 mb-12">
-              {[].map((social, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
-                >
-                  {social}
-                </a>
-              ))}
+              {[].map(
+                (social, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
+                  >
+                    {social}
+                  </a>
+                ),
+              )}
             </div>
             <div
               className={`border-t ${isDarkMode ? "border-gray-800" : "border-gray-300"} pt-8`}
