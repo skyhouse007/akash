@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,6 +12,10 @@ const App = () => {
     timeline: "",
     description: "",
   });
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const handleInputChange = (e) => {
     setFormData({
