@@ -307,7 +307,7 @@ const App = () => {
       <section
         id="home"
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
       >
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
