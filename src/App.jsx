@@ -406,7 +406,7 @@ const App = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 animate-bounce">
               <div
                 className={`w-6 h-10 border-2 ${isDarkMode ? "border-gray-400" : "border-gray-600"} rounded-full flex justify-center`}
               >
