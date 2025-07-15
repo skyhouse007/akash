@@ -889,19 +889,19 @@ const App = () => {
               {
                 icon: "📧",
                 title: "Email Us",
-                info: "hello@akashventure.com",
+                info: "Akash@dataplay.tech",
                 color: "blue",
               },
               {
                 icon: "📞",
                 title: "Call Us",
-                info: "+1 (555) 123-4567",
+                info: "+91 9685485376",
                 color: "purple",
               },
               {
                 icon: "📍",
                 title: "Visit Us",
-                info: "123 Innovation Street\nTech City, TC 12345",
+                info: "Gurunanak chowk, Raipur, Chhatisgarh",
                 color: "pink",
               },
             ].map((contact, index) => (
@@ -944,7 +944,7 @@ const App = () => {
               Transforming ideas into digital reality since 2021
             </p>
             <div className="flex justify-center space-x-8 mb-12">
-              {["LinkedIn", "Twitter", "GitHub", "Dribbble"].map(
+              {[].map(
                 (social, index) => (
                   <a
                     key={index}
