@@ -470,7 +470,7 @@ const App = () => {
                 value={formData.description}
                 onChange={handleInputChange}
                 rows="4"
-                className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg focus:border-blue-500 focus:outline-none transition-colors resize-none"
+                className={`w-full px-4 py-3 ${isDarkMode ? "bg-gray-700/50 border-gray-600" : "bg-gray-50 border-gray-300"} border rounded-lg focus:border-blue-500 focus:outline-none transition-colors resize-none`}
                 placeholder="Describe your project requirements, goals, and any specific features you need..."
               ></textarea>
             </div>
