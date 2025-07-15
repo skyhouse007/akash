@@ -511,7 +511,9 @@ const App = () => {
                   Why Choose Us?
                 </span>
               </h2>
-              <p className="text-lg text-gray-300 mb-6">
+              <p
+                className={`text-lg ${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-6`}
+              >
                 With years of experience in digital innovation, Akash Venture
                 has been at the forefront of creating cutting-edge solutions
                 that drive business success.
@@ -519,25 +521,33 @@ const App = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
-                  <span className="text-gray-300">
+                  <span
+                    className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                  >
                     Expert team of developers and designers
                   </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-gray-300">
+                  <span
+                    className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                  >
                     Latest technologies and best practices
                   </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-pink-500 rounded-full mr-4"></div>
-                  <span className="text-gray-300">
+                  <span
+                    className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                  >
                     Timely delivery and ongoing support
                   </span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-3 h-3 bg-blue-500 rounded-full mr-4"></div>
-                  <span className="text-gray-300">
+                  <span
+                    className={`${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+                  >
                     Competitive pricing and flexible packages
                   </span>
                 </div>
