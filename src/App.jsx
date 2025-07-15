@@ -309,13 +309,21 @@ const App = () => {
         ref={heroRef}
         className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
       >
-        {/* Animated Background Elements */}
+        {/* Hero Image Background */}
         <div className="absolute inset-0">
           <div
-            className={`absolute inset-0 ${isDarkMode ? "bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" : "bg-gradient-to-br from-blue-100/50 via-purple-100/50 to-pink-100/50"}`}
-          ></div>
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2F0047a4a62a384515b39d99953ead9c3c%2F9286f1762b474b099bf61fd050332f1b?format=webp&width=800')`,
+            }}
+          >
+            {/* Overlay for better text readability */}
+            <div
+              className={`absolute inset-0 ${isDarkMode ? "bg-black/70" : "bg-black/50"}`}
+            ></div>
+          </div>
           <div
-            className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-full blur-3xl animate-pulse"
+            className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"
             style={{
               left: "10%",
               top: "20%",
@@ -323,7 +331,7 @@ const App = () => {
             }}
           ></div>
           <div
-            className="absolute w-80 h-80 bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse"
+            className="absolute w-80 h-80 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse"
             style={{
               right: "10%",
               bottom: "20%",
@@ -944,17 +952,15 @@ const App = () => {
               Transforming ideas into digital reality since 2021
             </p>
             <div className="flex justify-center space-x-8 mb-12">
-              {[].map(
-                (social, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
-                  >
-                    {social}
-                  </a>
-                ),
-              )}
+              {[].map((social, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
+                >
+                  {social}
+                </a>
+              ))}
             </div>
             <div
               className={`border-t ${isDarkMode ? "border-gray-800" : "border-gray-300"} pt-8`}
