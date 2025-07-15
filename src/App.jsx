@@ -206,13 +206,13 @@ const App = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#quote"
-                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 text-white"
               >
                 Get Free Quote
               </a>
               <a
                 href="#portfolio"
-                className="border border-gray-600 hover:border-blue-400 px-8 py-4 rounded-full text-lg font-semibold transition-all hover:bg-gray-900"
+                className={`border ${isDarkMode ? "border-gray-600 hover:border-blue-400 hover:bg-gray-900" : "border-gray-300 hover:border-blue-400 hover:bg-gray-100"} px-8 py-4 rounded-full text-lg font-semibold transition-all`}
               >
                 View Our Work
               </a>
