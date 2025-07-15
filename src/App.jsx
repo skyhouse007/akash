@@ -123,7 +123,9 @@ const App = () => {
       className={`${isDarkMode ? "bg-black text-white" : "bg-white text-gray-900"} min-h-screen transition-colors duration-300`}
     >
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
+      <nav
+        className={`fixed top-0 w-full z-50 ${isDarkMode ? "bg-black/90 border-gray-800" : "bg-white/90 border-gray-200"} backdrop-blur-md border-b transition-colors duration-300`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -131,39 +133,48 @@ const App = () => {
                 Akash Venture
               </span>
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <a
-                  href="#home"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Home
-                </a>
-                <a
-                  href="#services"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Services
-                </a>
-                <a
-                  href="#portfolio"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Portfolio
-                </a>
-                <a
-                  href="#quote"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Get Quote
-                </a>
-                <a
-                  href="#contact"
-                  className="hover:text-blue-400 transition-colors"
-                >
-                  Contact
-                </a>
+            <div className="flex items-center space-x-6">
+              <div className="hidden md:block">
+                <div className="flex items-baseline space-x-8">
+                  <a
+                    href="#home"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Home
+                  </a>
+                  <a
+                    href="#services"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Services
+                  </a>
+                  <a
+                    href="#portfolio"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Portfolio
+                  </a>
+                  <a
+                    href="#quote"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Get Quote
+                  </a>
+                  <a
+                    href="#contact"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Contact
+                  </a>
+                </div>
               </div>
+              <button
+                onClick={toggleTheme}
+                className={`p-2 rounded-lg ${isDarkMode ? "bg-gray-800 hover:bg-gray-700" : "bg-gray-100 hover:bg-gray-200"} transition-colors duration-300`}
+                aria-label="Toggle theme"
+              >
+                {isDarkMode ? "☀️" : "🌙"}
+              </button>
             </div>
           </div>
         </div>
