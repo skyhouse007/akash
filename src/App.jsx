@@ -182,7 +182,9 @@ const App = () => {
 
       {/* Hero Section */}
       <section id="home" className="pt-20 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
+        <div
+          className={`absolute inset-0 ${isDarkMode ? "bg-gradient-to-br from-blue-900/20 to-purple-900/20" : "bg-gradient-to-br from-blue-100/50 to-purple-100/50"}`}
+        ></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -190,9 +192,13 @@ const App = () => {
                 Digital Innovation
               </span>
               <br />
-              <span className="text-white">Starts Here</span>
+              <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+                Starts Here
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p
+              className={`text-xl md:text-2xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} mb-8 max-w-3xl mx-auto`}
+            >
               We craft exceptional websites, mobile apps, software solutions,
               and brand identities that drive business growth and digital
               transformation.
