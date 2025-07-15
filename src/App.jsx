@@ -133,7 +133,7 @@ const App = () => {
     {
       title: "E-commerce Platform",
       category: "Web Development",
-      image: "🛒",
+      image: "��",
       description: "Full-featured online store with payment integration",
       tech: ["React", "Node.js", "MongoDB"],
       gradient: "from-blue-600 to-blue-400",
@@ -303,7 +303,7 @@ const App = () => {
         </div>
       </nav>
 
-            {/* Enhanced Hero Section */}
+      {/* Enhanced Hero Section */}
       <section
         id="home"
         ref={heroRef}
@@ -318,7 +318,9 @@ const App = () => {
             }}
           >
             {/* Overlay for better text readability */}
-            <div className={`absolute inset-0 ${isDarkMode ? "bg-black/70" : "bg-black/50"}`}></div>
+            <div
+              className={`absolute inset-0 ${isDarkMode ? "bg-black/70" : "bg-black/50"}`}
+            ></div>
           </div>
           <div
             className="absolute w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"
@@ -339,7 +341,7 @@ const App = () => {
           ></div>
         </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             {/* Build. Ship. Scale. Header */}
             <div className="mb-8">
@@ -369,7 +371,7 @@ const App = () => {
                   Digital
                 </span>
                 <span
-                  className={`block ${isDarkMode ? "text-white" : "text-gray-900"} relative`}
+                  className={`block ${isDarkMode ? "text-white" : "text-white"} relative`}
                   style={{
                     transform: `translateY(${scrollY * -0.05}px)`,
                   }}
@@ -382,7 +384,7 @@ const App = () => {
                 <span className="block bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
                   Starts Here
                 </span>
-              </h1>
+              </h2>
 
               {/* Floating Elements */}
               <div className="absolute -top-10 left-10 w-6 h-6 bg-blue-400 rounded-full animate-float opacity-60"></div>
@@ -802,7 +804,7 @@ const App = () => {
                     color: "blue",
                   },
                   {
-                    icon: "🚀",
+                    icon: "����",
                     text: "Latest technologies and best practices",
                     color: "purple",
                   },
@@ -966,17 +968,15 @@ const App = () => {
               Transforming ideas into digital reality since 2021
             </p>
             <div className="flex justify-center space-x-8 mb-12">
-              {[].map(
-                (social, index) => (
-                  <a
-                    key={index}
-                    href="#"
-                    className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
-                  >
-                    {social}
-                  </a>
-                ),
-              )}
+              {[].map((social, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className={`${isDarkMode ? "text-gray-400" : "text-gray-600"} hover:text-blue-400 transition-all duration-300 text-lg font-medium hover:scale-110`}
+                >
+                  {social}
+                </a>
+              ))}
             </div>
             <div
               className={`border-t ${isDarkMode ? "border-gray-800" : "border-gray-300"} pt-8`}
