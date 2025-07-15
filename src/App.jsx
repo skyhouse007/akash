@@ -342,7 +342,7 @@ const App = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-8"
+            className={`${isDarkMode ? "bg-gray-800/50 border-gray-700" : "bg-white border-gray-200"} backdrop-blur-sm border rounded-2xl p-8 shadow-lg`}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
