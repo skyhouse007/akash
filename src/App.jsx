@@ -332,7 +332,9 @@ const App = () => {
                 Get Your Quote
               </span>
             </h2>
-            <p className="text-xl text-gray-300">
+            <p
+              className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+            >
               Tell us about your project and we'll provide a detailed proposal
               within 24 hours.
             </p>
