@@ -119,7 +119,9 @@ const App = () => {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div
+      className={`${isDarkMode ? "bg-black text-white" : "bg-white text-gray-900"} min-h-screen transition-colors duration-300`}
+    >
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
